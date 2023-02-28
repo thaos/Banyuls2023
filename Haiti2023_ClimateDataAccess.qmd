@@ -1,0 +1,227 @@
+---
+title: "Accès aux données climatiques"
+author: soulivanh thao (sthao@lsce.ipsl.fr)
+format:
+    revealjs:
+        theme: [default, custom.scss]
+        center: false
+---
+
+
+## Getting up
+
+- Turn off alarm
+- Get out of bed
+
+## Going to sleep
+
+- Get in bed
+- Count sheep
+
+## CMIP (Coupled Model Intercomparison Project)
+
+Better understand past, present and future climate changes arising from natural, unforced variability or in response to changes in radiative forcing in a multi-model context. 
+
+CMIP is a periodically conducted model intercomparison project to evaluate and compare climate models. CMIP protocols define central basic experiments which build the basis for model evaluation. 
+
+
+An important goal of CMIP is to make the multi-model output publically available in a standardized format. 
+
+::: aside
+Source: [wcrp-climate.org](https://www.wcrp-climate.org/wgcm-cmip)
+:::
+
+
+## CMIP6
+
+![](img/cmip6-design.webp)
+
+::: aside
+Source: 
+    [Eyring et al (2016)](doi:10.5194/gmd-9-1937-2016)
+    [Users Guide](https://pcmdi.llnl.gov/CMIP6/Guide/dataUsers.html)
+:::
+
+## CMIP6 Modelling Centers
+
+![](img/cmip6_institutions.png)
+
+## CMIP6 in IPCC AR6
+
+![](img/IPPC_AR6_GMT.png)
+
+
+## CORDEX
+
+## ESGF (Earth System Grid Federation )
+
+ Missions	
+  
+• Support Coupled Model Intercomparison Project (CMIP)
+activities and prepare for future assessments. CMIP is
+an initiative of the World Climate Research Programme.
+• Develop data and metadata facilities for inclusion of
+observations and reanalysis products for CMIP use.
+• Enhance and improve current Earth system science
+research infrastructure capabilities through involvement
+of the software development community and through
+adherence to sound software principles.
+• Foster collaboration across agency and political.
+• Integrate and interoperate with other software designed
+to meet ESGF objectives such as those developed by
+NASA, NOAA, and the European ENES.
+• Create software infrastructure and tools that facilitate
+scientific advancements.
+
+
+::: aside
+Source: [esgf.llnl.gov](https://esgf.llnl.gov/esgf-media/pdf/2017-ESGF-Brochure.pdf)
+:::
+
+## ESGF
+
+![](img/esgf_principle.png)
+
+
+::: aside
+Source: [esgf.llnl.gov](https://esgf.llnl.gov/esgf-media/pdf/2017-ESGF-Brochure.pdf)
+:::
+
+## ESGF
+
+![](img/gmd-14-629-2021-f02-web.png)
+
+::: aside
+Source: [Petrie et al. (2021): Coordinating an operational data distribution network for CMIP6 data] (https://doi.org/10.5194/gmd-14-629-2021)
+:::
+
+## NetCDF 
+
+NetCDF (Network Common Data Form) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. NetCDF is commonly used to store and distribute scientific data. The NetCDF software was developed at the Unidata Program Center in Boulder, Colorado, USA (Unidata NetCDF Factsheet; Also see Wikipedia article). NetCDF files usually have the extension .nc.
+
+
+::: aside
+Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/What+are+NetCDF+files+and+how+can+I+read+them)
+:::
+
+## NetCDF 
+Data in netCDF format is self-Describing. A netCDF file includes
+information about the data it contains.
+
+CF (Climate and Fore-
+cast) Conventions: designed to promote the
+processing and sharing of files created with
+the NetCDF API.     The conventions define
+metadata that provide a definitive description
+of what the data in each variable represents, and
+the spatial and temporal properties of the data.
+This enables users of data from different sources
+to decide which quantities are comparable, and
+facilitates building applications with powerful
+extraction, regridding, and display capabilities.
+For more information, visit:
+http://cfconventions.org/
+
+::: aside
+Source: [unidata.ucar.edu/](https://www.unidata.ucar.edu/publications/factsheets/current/factsheet_netcdf.pdf)
+:::
+
+
+## NetCDF examples
+
+- see netcdf metadata and data with ncdump
+
+- quick visualization with ncview
+
+- load netcdf data in python with xarray
+
+- other tools: NCO, CDO for ncdf manipulation
+
+
+## Climate Data Store (CDS)
+
+Supports the implementation of the Copernicus Climate Change Service (C3S).
+
+Provides Essential Climate Variables (ECVs), climate analyses, reanalyses, projections and indicators.
+
+Web-based and API-based search and retrieve facilities to access climate data and information.
+
+A generic software toolbox that allows users to develop web-based applications.
+
+The data provided by the CDS are free and open data, subject to the user agreeing to the relevant dataset licence(s).
+
+::: aside
+Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/Climate+Data+Store+%28CDS%29+documentation)
+:::
+
+
+
+## Climate Data Store
+
+- Inscription
+
+- Les jeux de données disponibles
+
+- Faire une requête via le formulaire
+
+- Suivre la progression des requêtes
+
+
+## CDS API
+
+- Utiliser l’API 
+
+- Installer le module cdsapi
+
+- Specifier les clés
+
+- Faire une requête simple via Python: s'aider du formulaire
+
+- Un package R non-officiel ([ecmwfr](https://confluence.ecmwf.int/display/CUSF/Download+CDS+ERA5+data+using+R))
+
+::: aside
+Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to)
+:::
+
+## CDS API: récupérer beaucoup de données
+Limits
+
+Limits (per-user, global and system) are set on usage of CDS resources to ensure an appropriate level of performance.
+
+The 'live' status of the limits values can be checked here https://cds.climate.copernicus.eu/live/limits
+
+Moreover, CDS data requests also have limits in terms of number of fields and volume size which are different for each dataset 
+
+::: aside
+Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to)
+:::
+
+## CDS API: récupérer beaucoup de données
+
+- Submit small requests over very large and heavy requests. This will ensure your requests are not penalised in the CDS request queue. In particular, 1 variable, 1 level, 1 month pper request for ERA5 
+
+- Loop over time period in Python
+
+
+::: aside
+Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to)
+:::
+
+## CDS Toolbox
+
+For online preprocessing and visualization.
+
+Lots of documentation, [tutorials](https://ecmwf-projects.github.io/copernicus-training-c3s/intro.html) and examples available.
+
+See the API section to see all tools available.
+
+
+## CDS Toolbox examples:
+
+- download ERA5 daily data with the [https://cds.climate.copernicus.eu/apps/user-apps/app-c3s-daily-era5-statistics](https://cds.climate.copernicus.eu/apps/user-apps/app-c3s-daily-era5-statistics)
+
+- Download mean time-series for a country: custom app based on  the apps "Bioclimatic indicator and climate suitability" explorer and "17_dynamic_map_mask_child"
+
+
+Sources: 
+[cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/toolbox/doc/index.html)
