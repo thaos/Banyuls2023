@@ -57,6 +57,8 @@ Source:
 ![](img/IPPC_AR6_GMT.png)
 
 ## CMIP6 Variables List
+https://clipc-services.ceda.ac.uk/dreq/index.html
+
 
 ## CORDEX
 
@@ -176,7 +178,18 @@ Source: [unidata.ucar.edu/](https://www.unidata.ucar.edu/publications/factsheets
 
 - load netcdf data in python with xarray
 
+- load netcdf data in R with ncdf4
+
+
 - other tools: NCO, CDO for ncdf manipulation
+
+## CDO
+
+https://code.mpimet.mpg.de/projects/cdo/embedded/cdo_refcard.pdf
+
+## NCO
+
+https://nco.sourceforge.net/nco_rfr_crd.pdf
 
 
 ## Climate Data Store (CDS)
