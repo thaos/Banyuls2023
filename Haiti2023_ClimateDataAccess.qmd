@@ -8,73 +8,102 @@ format:
 ---
 
 
-## Getting up
+## Qui suis je ?
 
-- Turn off alarm
-- Get out of bed
+Master en statistiques
 
-## Going to sleep
+Ingénieur de recherche au LSCE (Laboratoire des Sciences du
+Climat et de l’Environnement)
 
-- Get in bed
-- Count sheep
+Je travaille avec les chercheurs de l’équipe ESTIMR
+(Extrêmes : Statistiques, Impacts et Régionalisation)
 
-## Disclaimers
+Développement d'outils statistiques pour l'étude de la
+variabilité climatique.
 
-Nothing new, everything I present is based on online material.
+## De quoi vais-je parler ?
 
-Brief and non exhaustive summary of tools I used to access climate data
+Présenter les principaux types de données que nous utilisons et comment y accéder.
+
+Pas exhaustif, tous les jeux de données et les plateformes de données ne sont pas abordés.
+
+Tout ce que je présente est basé sur de la documentation et des tutoriels disponibles en ligne.
+
+Objectif: vous donner les principales ressources pour pouvoir vous lancer.
+
 
 ## CMIP (Coupled Model Intercomparison Project)
 
-Better understand past, present and future climate changes arising from natural, unforced variability or in response to changes in radiative forcing in a multi-model context. 
+> Better understand past, present and future climate changes arising from natural, unforced variability or in response to changes in radiative forcing in a multi-model context. 
 
-CMIP is a periodically conducted model intercomparison project to evaluate and compare climate models. CMIP protocols define central basic experiments which build the basis for model evaluation. 
+> CMIP is a periodically conducted model intercomparison project to evaluate and compare climate models. CMIP protocols define central basic experiments which build the basis for model evaluation.
 
-
-An important goal of CMIP is to make the multi-model output publically available in a standardized format. 
+> An important goal of CMIP is to make the multi-model output publically available in a standardized format. 
 
 ::: aside
 Source: [wcrp-climate.org](https://www.wcrp-climate.org/wgcm-cmip)
 :::
 
 
-## CMIP6
+##
 
-![](img/cmip6-design.webp)
+![](img/cmip6-design.webp){fig-align="center"}
 
 ::: aside
 Source: 
-    [Eyring et al (2016)](doi:10.5194/gmd-9-1937-2016)
+    [Eyring et al (2016)](doi:10.5194/gmd-9-1937-2016), 
     [Users Guide](https://pcmdi.llnl.gov/CMIP6/Guide/dataUsers.html)
 :::
 
-## CMIP6 Modelling Centers
+## 
 
-![](img/cmip6_institutions.png)
+![](img/cmip6_institutions.png){fig-align="center"}
 
 ## CMIP6 in IPCC AR6
 
 ![](img/IPPC_AR6_GMT.png)
 
 ## CMIP6 Variables List
-https://clipc-services.ceda.ac.uk/dreq/index.html
 
+[![](img/Screenshot from 2023-03-07 11-42-36.png)](https://clipc-services.ceda.ac.uk/dreq/index.html)
+
+::: aside
+Source: [ceda.ac.uk](https://clipc-services.ceda.ac.uk/dreq/index.html)
+:::
 
 ## CORDEX
 
-The CORDEX vision is to advance and coordinate the science and application of regional climate downscaling through global partnerships.
+> The CORDEX vision is to advance and coordinate the science and application of regional climate downscaling through global partnerships.
 
-Global Climate Models (GCM) can provide us with projections of how the climate of the earth may change in the future. These results are the main motivation for the international community to take decisions on climate change mitigation. However, the impacts of a changing climate, and the adaptation strategies required to deal with them, will occur on more regional and national scales. This is where Regional Climate Downscaling (RCD) has an important role to play by providing projections with much greater detail and more accurate representation of localised extreme events.
+> Global Climate Models (GCM) -> climate change projections ->  decisions on climate change mitigation.
+
+> GCM resolution not sufficient for impact and devise adaptation strategies 
+
+
+> Regional Climate Downscaling (RCD) ->  better representation of localised extreme events.
+
+::: aside
+Source: [https://cordex.org/](https://cordex.org/)
+:::   
+
 
 ## CORDEX Goals
 
 1. To better understand relevant regional/local climate phenomena, their variability and changes, through downscaling.
+
 2. To evaluate and improve regional climate downscaling models and techniques
+
 3. To produce coordinated sets of regional downscaled projections worldwide
-9. To foster communication and knowledge exchange with users of regional climate information
+
+4. To foster communication and knowledge exchange with users of regional climate information
+
+
+::: aside
+Source: [https://cordex.org/](https://cordex.org/)
+:::   
 
 ## Regional Climate Models
-![](img/RCM_Cordex.png)
+![](img/RCM_Cordex.png){fig-align="center"}
 
 ::: aside
 Source: [Giorgi et Gutowski Jr. 2015    ](https://doi.org/10.3390/atmos10110726)
@@ -82,7 +111,7 @@ Source: [Giorgi et Gutowski Jr. 2015    ](https://doi.org/10.3390/atmos10110726)
 
 ## CORDEX domains
 
-![](img/The-ten-CORDEX-CORE-model-domains-simulated-by-the-model-REMO-North-America-NAM_W640.jpg)
+![](img/The-ten-CORDEX-CORE-model-domains-simulated-by-the-model-REMO-North-America-NAM_W640.jpg){fig-align="center" height=500}
 
 ::: aside
 Source: [Remedio et al. 2019](https://doi.org/10.3390/atmos10110726)
@@ -90,29 +119,22 @@ Source: [Remedio et al. 2019](https://doi.org/10.3390/atmos10110726)
 
 ## CORDEX domains
 
-![](img/cordex_domains.png)
+![](img/cordex_domains.png){fig-align="center" height=500}
 
 ::: aside
-Source: [Remedio et al. 2019](https://doi.org/10.3390/atmos10110726)
+Source: [https://cordex.org/](https://cordex.org/)
 :::
 
 ## ESGF (Earth System Grid Federation )
 
- Missions	
+Missions	
   
 • Support Coupled Model Intercomparison Project (CMIP)
-activities and prepare for future assessments. CMIP is
-an initiative of the World Climate Research Programme.
+activities and prepare for future assessments.
+
 • Develop data and metadata facilities for inclusion of
 observations and reanalysis products for CMIP use.
-• Enhance and improve current Earth system science
-research infrastructure capabilities through involvement
-of the software development community and through
-adherence to sound software principles.
-• Foster collaboration across agency and political.
-• Integrate and interoperate with other software designed
-to meet ESGF objectives such as those developed by
-NASA, NOAA, and the European ENES.
+
 • Create software infrastructure and tools that facilitate
 scientific advancements.
 
@@ -121,18 +143,18 @@ scientific advancements.
 Source: [esgf.llnl.gov](https://esgf.llnl.gov/esgf-media/pdf/2017-ESGF-Brochure.pdf)
 :::
 
-## ESGF
+## 
 
-![](img/esgf_principle.png)
+![](img/esgf_principle.png){fig-align="center" height=700}
 
 
 ::: aside
 Source: [esgf.llnl.gov](https://esgf.llnl.gov/esgf-media/pdf/2017-ESGF-Brochure.pdf)
 :::
 
-## ESGF
+## ESGF Nodes
 
-![](img/gmd-14-629-2021-f02-web.png)
+![](img/gmd-14-629-2021-f02-web.png){fig-align="center" height=500}
 
 ::: aside
 Source: [Petrie et al. (2021)](https://doi.org/10.5194/gmd-14-629-2021)
@@ -140,7 +162,11 @@ Source: [Petrie et al. (2021)](https://doi.org/10.5194/gmd-14-629-2021)
 
 ## NetCDF 
 
-NetCDF (Network Common Data Form) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. NetCDF is commonly used to store and distribute scientific data. The NetCDF software was developed at the Unidata Program Center in Boulder, Colorado, USA (Unidata NetCDF Factsheet; Also see Wikipedia article). NetCDF files usually have the extension .nc.
+> NetCDF (Network Common Data Form) is a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. 
+
+> NetCDF is commonly used to store and distribute scientific data. 
+
+> NetCDF files usually have the extension .nc.
 
 
 ::: aside
@@ -148,22 +174,21 @@ Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/What+are
 :::
 
 ## NetCDF 
-Data in netCDF format is self-Describing. A netCDF file includes
+
+> Data in netCDF format is self-Describing. A netCDF file includes
 information about the data it contains.
 
-CF (Climate and Fore-
+> CF (Climate and Fore-
 cast) Conventions: designed to promote the
 processing and sharing of files created with
-the NetCDF API.     The conventions define
+the NetCDF API.     
+
+> The conventions define
 metadata that provide a definitive description
 of what the data in each variable represents, and
 the spatial and temporal properties of the data.
-This enables users of data from different sources
-to decide which quantities are comparable, and
-facilitates building applications with powerful
-extraction, regridding, and display capabilities.
-For more information, visit:
-http://cfconventions.org/
+
+> For more information, visit: http://cfconventions.org/
 
 ::: aside
 Source: [unidata.ucar.edu/](https://www.unidata.ucar.edu/publications/factsheets/current/factsheet_netcdf.pdf)
@@ -185,24 +210,23 @@ Source: [unidata.ucar.edu/](https://www.unidata.ucar.edu/publications/factsheets
 
 ## CDO
 
-https://code.mpimet.mpg.de/projects/cdo/embedded/cdo_refcard.pdf
+[![](img/cdo_refcard.png)](https://code.mpimet.mpg.de/projects/cdo/embedded/cdo_refcard.pdf)
 
 ## NCO
 
-https://nco.sourceforge.net/nco_rfr_crd.pdf
+
+[![](img/nco_refcard.png)](https://nco.sourceforge.net/nco_rfr_crd.pdf)
 
 
 ## Climate Data Store (CDS)
 
-Supports the implementation of the Copernicus Climate Change Service (C3S).
+> Provides Essential Climate Variables (ECVs), climate analyses, reanalyses, projections and indicators.
 
-Provides Essential Climate Variables (ECVs), climate analyses, reanalyses, projections and indicators.
+> Web-based and API-based search and retrieve facilities to access climate data and information.
 
-Web-based and API-based search and retrieve facilities to access climate data and information.
+> A generic software toolbox that allows users to develop web-based applications.
 
-A generic software toolbox that allows users to develop web-based applications.
-
-The data provided by the CDS are free and open data, subject to the user agreeing to the relevant dataset licence(s).
+> The data provided by the CDS are free and open data, subject to the user agreeing to the relevant dataset licence(s).
 
 ::: aside
 Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/Climate+Data+Store+%28CDS%29+documentation)
@@ -238,13 +262,12 @@ Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to
 :::
 
 ## CDS API: récupérer beaucoup de données
-Limits
 
-Limits (per-user, global and system) are set on usage of CDS resources to ensure an appropriate level of performance.
+> Limits (per-user, global and system) are set on usage of CDS resources to ensure an appropriate level of performance.
 
-The 'live' status of the limits values can be checked here https://cds.climate.copernicus.eu/live/limits
+> The 'live' status of the limits values can be checked here https://cds.climate.copernicus.eu/live/limits
 
-Moreover, CDS data requests also have limits in terms of number of fields and volume size which are different for each dataset 
+> CDS data requests also have limits in terms of number of fields and volume size which are different for each dataset 
 
 ::: aside
 Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to)
@@ -252,9 +275,12 @@ Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to
 
 ## CDS API: récupérer beaucoup de données
 
-- Submit small requests over very large and heavy requests. This will ensure your requests are not penalised in the CDS request queue. In particular, 1 variable, 1 level, 1 month pper request for ERA5 
 
-- Loop over time period in Python
+> Submit small requests over very large and heavy requests. 
+This will ensure your requests are not penalised in the CDS request queue. 
+In particular, 1 variable, 1 level, 1 month pper request for ERA5 
+
+- faire une boucle en python sur les variables, niveaux, mois et années.
 
 
 ::: aside
