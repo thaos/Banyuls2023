@@ -21,6 +21,8 @@ Je travaille avec les chercheurs de l’équipe ESTIMR
 Développement d'outils statistiques pour l'étude de la
 variabilité climatique.
 
+-> Besoin de données !
+
 ## De quoi vais-je parler ?
 
 Présenter les principaux types de données que nous utilisons et comment y accéder.
@@ -30,6 +32,24 @@ Pas exhaustif, tous les jeux de données et les plateformes de données ne sont 
 Tout ce que je présente est basé sur de la documentation et des tutoriels disponibles en ligne.
 
 Objectif: vous donner les principales ressources pour pouvoir vous lancer.
+
+## Les données climatiques: observations
+![](img/gos-fullsize.jpg)
+
+::: aside
+Source: [public.wmo.int](https://public.wmo.int/en/about-us/vision-and-mission/wmo-integrated-global-observing-system)
+:::
+
+## Les données climatiques: simulations 
+![](img/ES_T3_INF01_v4bis.png){fig-align="center" height=500}
+
+::: aside
+Source: [lelivrescolaire.fr](https://www.lelivrescolaire.fr/page/5182592)
+:::
+
+
+:::
+
 
 
 ## CMIP (Coupled Model Intercomparison Project)
@@ -47,7 +67,7 @@ Source: [wcrp-climate.org](https://www.wcrp-climate.org/wgcm-cmip)
 
 ##
 
-![](img/cmip6-design.webp){fig-align="center"}
+![](img/cmip6-design.webp){fig-align="center" height=600}
 
 ::: aside
 Source: 
@@ -109,13 +129,6 @@ Source: [https://cordex.org/](https://cordex.org/)
 Source: [Giorgi et Gutowski Jr. 2015    ](https://doi.org/10.3390/atmos10110726)
 :::   
 
-## CORDEX domains
-
-![](img/The-ten-CORDEX-CORE-model-domains-simulated-by-the-model-REMO-North-America-NAM_W640.jpg){fig-align="center" height=500}
-
-::: aside
-Source: [Remedio et al. 2019](https://doi.org/10.3390/atmos10110726)
-:::
 
 ## CORDEX domains
 
@@ -124,6 +137,33 @@ Source: [Remedio et al. 2019](https://doi.org/10.3390/atmos10110726)
 ::: aside
 Source: [https://cordex.org/](https://cordex.org/)
 :::
+
+## Les réanalyses 
+![](img/Riken_DA_Bridge.png){fig-align="center" height=500}
+
+::: aside
+Source: [RIKEN](http://www.data-assimilation.riken.jp/en/research/)
+:::
+
+## Les réanalyses ERA5
+
+> ERA5 is the fifth generation ECMWF reanalysis for the global climate and weather for the past 8 decades. 
+
+> ERA5 provides hourly estimates for a large number of atmospheric, ocean-wave and land-surface quantities. 
+
+> An uncertainty estimate is sampled by an underlying 10-member ensemble at three-hourly intervals. 
+
+> ERA5 is updated daily with a latency of about 5 days.
+
+::: aside
+Source: [ECMWF](https://cds.climate.copernicus.eu/cdsapp#!/dataset/reanalysis-era5-single-levels?tab=overview)
+
+## Accès aux données
+
+- ESGF
+
+- Climate Data Store
+
 
 ## ESGF (Earth System Grid Federation )
 
@@ -159,6 +199,17 @@ Source: [esgf.llnl.gov](https://esgf.llnl.gov/esgf-media/pdf/2017-ESGF-Brochure.
 ::: aside
 Source: [Petrie et al. (2021)](https://doi.org/10.5194/gmd-14-629-2021)
 :::
+
+## ESGF
+
+- créer un compte sur ESGF
+- chercher des données
+- télécharger des données CMIP6 et CORDEX via HTTP et par script wget
+
+::: aside
+Source: [esgf.github.io](https://esgf.github.io/esgf-user-support/index.html)
+:::
+
 
 ## NetCDF 
 
@@ -206,7 +257,7 @@ Source: [unidata.ucar.edu/](https://www.unidata.ucar.edu/publications/factsheets
 - load netcdf data in R with ncdf4
 
 
-- other tools: NCO, CDO for ncdf manipulation
+- other tools: NCO, CDO for netcdf manipulation
 
 ## CDO
 
@@ -247,7 +298,7 @@ Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/Climate+
 
 ## CDS API
 
-- Utiliser l’API 
+- Utiliser l’API https://cds.climate.copernicus.eu/api-how-to
 
 - Installer le module cdsapi
 
