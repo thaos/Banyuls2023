@@ -291,7 +291,7 @@ Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/Climate+
 
 - Les jeux de données disponibles
 
-- Faire une requête via le formulaire
+- Faire une requête via le formulaire (ERA5 + CMIP6)
 
 - Suivre la progression des requêtes
 
