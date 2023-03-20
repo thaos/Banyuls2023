@@ -244,7 +244,9 @@ Source: [confluence.ecmwf.int](https://confluence.ecmwf.int/display/CKB/Climate+
 
 - Suivre la progression des requêtes
 
-
+::: aside
+Source: [cds.climate.copernicus.eu](https://ecmwf-projects.github.io/copernicus-training-c3s/cds-tutorial.html)
+:::
 ## CDS API
 
 - Utiliser l’API 
@@ -289,11 +291,11 @@ Source: [cds.climate.copernicus.eu](https://cds.climate.copernicus.eu/api-how-to
 
 ## CDS Toolbox
 
-For online preprocessing and visualization.
+Pour du traitement et de la visualisation en ligne
 
-Lots of documentation, [tutorials](https://ecmwf-projects.github.io/copernicus-training-c3s/intro.html) and examples available.
+Beaucoup de documentation, de tutoriels [tutorials](https://ecmwf-projects.github.io/copernicus-training-c3s/intro.html) et d'exemples disponibles.
 
-See the API section to see all tools available.
+Voir la section  API pour voir tous les outils disponibles.
 
 
 ## CDS Toolbox examples:
