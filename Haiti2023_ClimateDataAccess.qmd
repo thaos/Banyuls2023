@@ -269,6 +269,11 @@ Source: [unidata.ucar.edu/](https://www.unidata.ucar.edu/publications/factsheets
 [![](img/nco_refcard.png)](https://nco.sourceforge.net/nco_rfr_crd.pdf)
 
 
+## Climate4Impacts
+
+- WPS for preprocessing
+- Jupyter notebook for online processing.
+
 ## Climate Data Store (CDS)
 
 > Provides Essential Climate Variables (ECVs), climate analyses, reanalyses, projections and indicators.
